@@ -8,15 +8,30 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  color: #fff;
+  background-color: #141414;
 }
 
 .card {
   text-align: center;
-  outline: 1px solid red;
+  padding: 40px;
+  background-color: #1F1F1F;
 }
 
 .card__list {
   list-style-type: none;
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+}
+
+.card__link {
+  text-decoration: none;
+  background-color: #333333;
+  color: #FFFFFF;
+  padding-block: 12px;
+  width: 100%;
 
 }
