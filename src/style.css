@@ -1,3 +1,22 @@
-.card__link {
-  display: block;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  text-align: center;
+  outline: 1px solid red;
+}
+
+.card__list {
+  list-style-type: none;
+  margin-top: 30px;
+
 }
