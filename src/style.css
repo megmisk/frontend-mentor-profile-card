@@ -1,6 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Resets */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
 .container {
@@ -32,6 +40,8 @@
   background-color: #333333;
   color: #FFFFFF;
   padding-block: 12px;
+  /* remove this -- add display block instead */
   width: 100%;
-
+  display: block;
+  font-size: 16px;
 }
