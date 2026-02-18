@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Resets */
@@ -9,6 +9,11 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+}
+
+/* Utility Classes */
+.rounded {
+  border-radius: 10px;
 }
 
 .container {
@@ -26,6 +31,11 @@ button {
   background-color: #1F1F1F;
 }
 
+.card__location {
+  color: #CDE667;
+  margin-bottom: 30px;
+}
+
 .card__list {
   list-style-type: none;
   margin-top: 30px;
@@ -40,8 +50,12 @@ button {
   background-color: #333333;
   color: #FFFFFF;
   padding-block: 12px;
-  /* remove this -- add display block instead */
-  width: 100%;
   display: block;
+  width: 100%;
   font-size: 16px;
+}
+
+.card__link--primary {
+  background-color: #CDE667;
+  color: #1F1F1F;
 }
