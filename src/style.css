@@ -1,3 +1,8 @@
+:root {
+  --color-accent: #CDE667;
+  --color-light: #FFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +26,7 @@ button {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  color: #fff;
+  color: var(--color-light);
   background-color: #141414;
 }
 
@@ -32,7 +37,7 @@ button {
 }
 
 .card__location {
-  color: #CDE667;
+  color: var(--color-accent);
   margin-bottom: 30px;
 }
 
@@ -48,7 +53,7 @@ button {
 .card__link {
   text-decoration: none;
   background-color: #333333;
-  color: #FFFFFF;
+  color: var(--color-light);
   padding-block: 12px;
   display: block;
   width: 100%;
@@ -56,6 +61,6 @@ button {
 }
 
 .card__link--primary {
-  background-color: #CDE667;
+  background-color: var(--color-accent);
   color: #1F1F1F;
 }
