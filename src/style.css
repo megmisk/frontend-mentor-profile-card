@@ -36,6 +36,13 @@ button {
   background-color: #1F1F1F;
 }
 
+.card__image {
+  max-width: 90px;
+  border-radius: 100%;
+  aspect-ratio: 1;
+  margin-bottom: 30px;
+}
+
 .card__location {
   color: var(--color-accent);
   margin-bottom: 30px;
