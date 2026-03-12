@@ -27,13 +27,14 @@ button {
   align-items: center;
   min-height: 100vh;
   color: var(--color-light);
-  background-color: #141414;
+  background-color: #1F1F1F;
 }
 
 .card {
   text-align: center;
   padding: 40px;
   background-color: #1F1F1F;
+  width: 100%;
 }
 
 .card__image {
@@ -70,4 +71,19 @@ button {
 .card__link--primary {
   background-color: var(--color-accent);
   color: #1F1F1F;
+}
+
+/* Styles for viewports 400px or wider */
+@media screen and (min-width: 400px) {
+
+  .container {
+    background-color: #141414;
+  }
+
+  .card {
+    border-radius: 10px;
+    max-width: 350px;
+    min-height: auto;
+  }
+
 }
