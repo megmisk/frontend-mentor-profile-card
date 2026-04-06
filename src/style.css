@@ -21,6 +21,7 @@ button {
   border-radius: 10px;
 }
 
+/* Component Styles */
 .container {
   display: flex;
   justify-content: center;
@@ -55,7 +56,33 @@ button {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
 
+.card__list li {
+  /* fade-up animation properties */
+  opacity: 0;
+  transform: translateY(20px);
+  animation-name: fade-up;
+  animation-duration: 400ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+/* Add a delay for each animated item */
+.card__list li:nth-of-type(1) {
+  animation-delay: 200ms;
+}
+
+.card__list li:nth-of-type(2) {
+  animation-delay: 400ms;
+}
+
+.card__list li:nth-of-type(3) {
+  animation-delay: 600ms;
+}
+
+.card__list li:nth-of-type(4) {
+  animation-delay: 800ms;
 }
 
 .card__link {
@@ -86,4 +113,11 @@ button {
     min-height: auto;
   }
 
+}
+
+@keyframes fade-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
