@@ -1,14 +1,36 @@
+// Modify to use generic data selectors to include images, text, and links
 const cardLinks = document.querySelectorAll('.card__list li');
-// console.log(cardLinks);
+
 
 cardLinks.forEach((item, index) => {
-  // console.log(index, item);
   
   let staggerAmount = 200;
   let animationDelay = index * staggerAmount;
-  
-  // console.log(animationDelay);
-  
+    
   item.style.animationDelay = animationDelay + 'ms';
 });
 
+
+const email = 'megmisk@gmail.com';
+
+const emailButton = document.getElementById('email-button');
+
+async function copyToClipboard(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    console.log('Text copied to clipboard');
+    // Have UI feedback for success
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+    // Have UI feedback for failure
+  }
+}
+
+emailButton.addEventListener('click', () => copyToClipboard(email));
+
+
+
+
+
+
+// gh pr create --web --title "Your PR Title" --body "Your description"
