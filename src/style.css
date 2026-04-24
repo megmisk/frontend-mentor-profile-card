@@ -1,6 +1,9 @@
 :root {
   --color-accent: #CDE667;
   --color-light: #FFF;
+  --color-dark-gray: #333333;
+  --color-dark: #1F1F1F;
+  --color-darkest: #141414;
 }
 
 /* Resets */
@@ -17,7 +20,7 @@ button {
 
 /* Global Styles */
 body {
-  background-color: #1F1F1F;
+  background-color: var(--color-dark);
   font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -33,13 +36,13 @@ body {
   align-items: center;
   min-height: 100vh;
   color: var(--color-light);
-  background-color: #1F1F1F;
+  background-color: var(--color-dark);
 }
 
 .card {
   text-align: center;
   padding: 40px;
-  background-color: #1F1F1F;
+  background-color: var(--color-dark);
   width: 100%;
 }
 
@@ -75,7 +78,7 @@ body {
 
 .card__link {
   text-decoration: none;
-  background-color: #333333;
+  background-color: var(--color-dark-gray);
   color: var(--color-light);
   padding-block: 12px;
   display: block;
@@ -88,11 +91,28 @@ body {
   color: #1F1F1F;
 }
 
+.alert {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  bottom: 30px;
+  padding: 20px 36px;
+  border-radius: 60px;
+  background-color: var(--color-dark-gray);
+  transform: translateY(300%);
+  transition: transform 300ms ease-out;
+}
+
+.alert.active {
+  transform: translateY(0);
+}
+
 /* Styles for viewports 400px or wider */
 @media screen and (min-width: 460px) {
 
   .container {
-    background-color: #141414;
+    background-color: var(--color-darkest);
   }
 
   .card {

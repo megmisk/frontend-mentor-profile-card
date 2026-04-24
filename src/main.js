@@ -14,12 +14,18 @@ cardLinks.forEach((item, index) => {
 const email = 'megmisk@gmail.com';
 
 const emailButton = document.getElementById('email-button');
+const alertSuccess = document.getElementById('alert-success');
 
 async function copyToClipboard(text) {
   try {
     await navigator.clipboard.writeText(text);
     console.log('Text copied to clipboard');
     // Have UI feedback for success
+    alertSuccess.classList.add('active');
+    // Remove the active class after 3 seconds
+    setTimeout(() => {
+      alertSuccess.classList.remove('active');
+    }, 5000);
   } catch (err) {
     console.error('Failed to copy: ', err);
     // Have UI feedback for failure
