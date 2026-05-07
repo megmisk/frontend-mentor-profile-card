@@ -19,7 +19,6 @@ function copyEmailToClipboard() {
   async function copyToClipboard(text) {
     try {
       await navigator.clipboard.writeText(text);
-      console.log('Text copied to clipboard');
       // Have UI feedback for success
       alertSuccess.classList.add('active');
       // Remove the active class after 5 seconds
@@ -29,15 +28,19 @@ function copyEmailToClipboard() {
     } catch (err) {
       console.error('Failed to copy: ', err);
       // Have UI feedback for failure
+      alert('Failed to copy email address. Please try manually copying: ' + email);
     }
   }
 
   emailButton.addEventListener('click', () => copyToClipboard(email));
 }
 
-// Call the functions to initialize the page
-animateElements();
-copyEmailToClipboard();
+window.addEventListener('DOMContentLoaded', () => {
+  // Call the functions to initialize the page
+  animateElements();
+  copyEmailToClipboard();
+});
+
 
 
 
