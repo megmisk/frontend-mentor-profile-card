@@ -2,14 +2,14 @@
   /* Primitives - raw color values */
   
   /* Original theme colors */
-  /* --color-green: #CDE667;
+  --color-green: #CDE667;
   --color-white: #FFF;
   --color-dark-gray: #333333;
   --color-dark: #1F1F1F;
-  --color-darkest: #141414; */
+  --color-darkest: #141414;
 
   /* Kevin's theme colors */
-  --color-vanilla-custard: #EAE2B7;
+  --color-vanilla-custard: #f0eacb;
   --color-charcoal-blue: #2f3e46;
   --color-yellow: #FCBF49;
   --color-space-blue: #01273c;
@@ -24,7 +24,7 @@
   /* --color-primary: var(--color-green);
   --color-text-light: var(--color-white);
   --color-text-dark: var(--color-dark-gray);
-  --color-body-background: var(--color-dark);
+  --color-body-background: var(--color-darkest);
   --color-card-background: var(--color-dark);
   --color-link-background: var(--color-dark-gray);
   --color-alert-background: var(--color-dark-gray); */
@@ -40,6 +40,14 @@
   --color-alert-background: var(--color-space-blue);
 
   /* Megan's Theme tokens */
+  /* --color-primary: ;
+  --color-text-light: ;
+  --color-text-dark: ;
+  --color-body-background: ;
+  --color-body-background-medium-up: ;
+  --color-card-background: ;
+  --color-link-background: ;
+  --color-alert-background: ; */
 
 }
 
